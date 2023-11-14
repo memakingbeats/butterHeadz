@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        />
+
+        <link rel="stylesheet" href="./index.css" />
+
+        <title>Bootstrap Navbar</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Custom styles for the second navigation bar */
+            /* Custom styles for the second navigation bar */
+
+            .navbar-custom .navbar-nav {
+                background-color: #e4480a;
+                align-items: center;
+            }
+            .navbar-custom .navbar-nav .nav-link {
+                color: #000000;
+                transition: color 0.3s ease-in-out;
+            }
+
+            .navbar-custom .navbar-nav .nav-link:hover {
+                color: #6d00fb;
+            }
+
+            .navbar-brand {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .navbar-brand img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .navbar-toggler .justify-content-end {
+                background-color: #e4480a !important;
+            }
+            /* Custom styles for the header with background image */
+            .header-section {
+                background-image: url("./imagens/bg1x.jpg");
+                background-size: cover;
+                background-position: center;
+                color: #ffffff;
+                text-align: center;
+                padding: 100px 0;
+            }
+
+            /* Custom styles for the image section */
+            .image-section {
+                display: flex;
+                justify-content: center; /* Center the images horizontally */
+                flex-wrap: wrap;
+                margin: 20px 0;
+            }
+
+            .image-section img {
+                width: 300px;
+                height: 300px;
+                margin: 10px 0 0 10px; /* Add margin between images */
+            }
+
+            /* Custom styles for the footer */
+            .footer-section {
+                background-color: #333;
+                color: #fff;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            .footer-section .footer-logo {
+                width: 50px;
+                height: 50px;
+                margin-right: 20px;
+            }
+
+            .footer-section .container img {
+                width: 100px;
+                height: 100px;
+            }
+
+            @media (max-width: 768px) {
+                .image-section img {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- First Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Checkout</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Second Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <a class="navbar-brand" href="#">
+                <img
+                    src="./imagens/butterheadz.png"
+                    alt="Logo"
+                    width="300"
+                    height="300"
+                    class="d-inline-block align-top"
+                />
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars" style="color: #000000"></i>
+            </button>
+            <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+            >
+                <ul class="navbar-nav contSm">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lathe Parts </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stylus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blanks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rotaries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Riaa Vst</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header with Background Image -->
+        <header class="header-section">
+            <h1>Welcome to ButterHeadz.com</h1>
+            <p>
+                We manufacture and sell hard to find parts, supplies, and tools
+                for record cutting lathes, as well as official Presto brand
+                Feedscrews and Sapphire Embossing Styli.
+            </p>
+        </header>
+
+        <!-- Image Section -->
+        <div class="container">
+            <div class="row image-section">
+                <div class="col-6 col-md-6 col-lg-4">
+                    <img src="./imagens/lathe1.jpg" alt="Image 1" />
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <img src="./imagens/lathe2.jpg" alt="Image 2" />
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <img src="./imagens/lathe3.jpg" alt="Image 3" />
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <img src="./imagens/rotary1.jpg" alt="Image 1" />
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <img src="./imagens/rotary2.jpg" alt="Image 2" />
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <img src="./imagens/rotary3.jpg" alt="Image 3" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img
+                            src="./imagens/butterheadz.png"
+                            alt="Footer Logo"
+                            class="footer-logo"
+                        />
+                        <!-- Replace "./imagens/footer-logo.png" with your actual logo path -->
+                    </div>
+                    <div class="col-md-6">
+                        <h1>About us</h1>
+                        <p>
+                            RecordLatheParts.com is the culmination of decades
+                            of experience in record lathes, from building,
+                            repairing, and selling, to literally cutting fifty
+                            thousand records from customers across the world.
+                        </p>
+                        <p></p>
+                        <p>
+                            We sell refurbished record lathe cutters, record
+                            blanks of various sizes for embossing, and packaging
+                            for custom lathe cut records. In addition, we are
+                            the current owners of the Presto Recording
+                            Corporation™ trademark, and we are the only company
+                            in the world currently manufacturing hard to find
+                            feedscrews for vintage Presto cutters, as well as
+                            custom sapphire embossing styli.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright Section -->
+        <div class="copyright-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2023 Your Company. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+        <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
